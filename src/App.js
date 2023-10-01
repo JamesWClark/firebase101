@@ -93,7 +93,7 @@ function App() {
   }
 
   return (
-    <div>
+    <div className='main'>
       <Auth />
 
       <div>
