@@ -1,0 +1,5 @@
+.flex { display: flex; }
+
+.editable-description {
+    display: inline-block;
+}
