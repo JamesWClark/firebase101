@@ -1,4 +1,34 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #333;
+    background-color: #ddd;
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+}
+
 .flex { display: flex; }
+.x1 { flex: 1; }
+.x2 { flex: 2; }
+.x3 { flex: 3; }
+.x4 { flex: 4; }
+.x5 { flex: 5; }
+.x6 { flex: 6; }
+
+.left { text-align: left; }
+.center { text-align: center; }
+.right { text-align: right; }
+.flex.left { justify-content: flex-start; }
+.flex.center { justify-content: center; }
+.flex.right { justify-content: flex-end; }
+.flex.bottom { align-items: flex-end; }
+.flex.middle { align-items: center; }
+.flex.top { align-items: flex-start; }
 
 .editable-description {
     display: inline-block;

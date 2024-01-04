@@ -1,11 +1,11 @@
 import React, { useEffect, useState, useRef } from 'react';
-import { useProblem } from './hooks/useProblem';
+import { useProblem } from '../../hooks/useProblem';
 import { CodeMirrorEditor } from './CodeMirrorEditor';
 import { EditableHeading } from './EditableHeading';
 import { EditableParagraph } from './EditableParagraph';
 import { TagEditor } from './TagEditor';
 
-import './styles/Main.css';
+import '../../styles/Main.css';
 
 export const NewProblem = () => {
 

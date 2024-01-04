@@ -10,7 +10,7 @@ import { javascript, scopeCompletionSource, javascriptLanguage } from '@codemirr
 import { oneDark } from '@codemirror/theme-one-dark';
 import { debounce } from 'lodash';
 
-import './styles/CodeMirrorEditor.css';
+import '../../styles/CodeMirrorEditor.css';
 
 export const CodeMirrorEditor = () => {
     const [isSaving, setIsSaving] = useState(false);
