@@ -13,6 +13,10 @@ ignoring files.
 /build
 /dist
 
+# config
+/.firebase
+/.github
+
 # misc
 .DS_Store
 .env.local
