@@ -43,7 +43,7 @@ export const EditableParagraph = ({ description, setDescription }) => {
         </p>
     ) : (
         <div>
-            <img src="https://img.icons8.com/ios-glyphs/20/000000/pencil.png" alt="Edit" />
+            <img className="glyph-icon" src="https://img.icons8.com/ios-glyphs/20/000000/pencil.png" alt="Edit" />
             <p className="editable-description" onClick={handleHeadingClick}>
                 { description.length === 0 ? 'Click to add a description' : description }
             </p>

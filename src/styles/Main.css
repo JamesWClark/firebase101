@@ -2,7 +2,7 @@ html, body {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     color: #333;
     background-color: #ddd;
 }
@@ -33,3 +33,13 @@ img {
 .editable-description {
     display: inline-block;
 }
+
+.glyph-icon {
+    width: initial;
+    height: initial;
+}
+
+.invisible { visibility: hidden; }
+.hidden { display: none; }
+.pointer { cursor: pointer; }
+.break { margin-bottom: 1.2em; }

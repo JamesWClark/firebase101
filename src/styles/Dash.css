@@ -5,3 +5,43 @@
     max-width: 800px;
     padding: 20px;
 }
+
+.problem-list-item {
+    border: solid black 1px;
+    margin-right: 10px;
+    padding: 10px 0 10px 0;
+}
+
+.problem-list-item-link {
+    color: black;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.problem-list-item-link:hover {
+    background-color: #f2f2f2;
+}
+
+.continue-button,
+.new-problem-button {
+    padding: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+.continue-button {
+    border: solid #00008b 2px; /* Darker blue */
+    background-color: #add8e6; /* Light blue */
+    color: #000080; /* Navy */
+}
+
+.new-problem-button {
+    border: solid black 1px;
+    background-color: #ddd;
+    color: #333;    
+}

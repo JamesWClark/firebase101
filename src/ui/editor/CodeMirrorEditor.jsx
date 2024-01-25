@@ -10,9 +10,10 @@ import { javascript, scopeCompletionSource, javascriptLanguage } from '@codemirr
 import { oneDark } from '@codemirror/theme-one-dark';
 import { debounce } from 'lodash';
 
+
 import '../../styles/CodeMirrorEditor.css';
 
-export const CodeMirrorEditor = () => {
+export const CodeMirrorEditor = ({ initialCode }) => {
     const [isSaving, setIsSaving] = useState(false);
     const [saveStatus, setSaveStatus] = useState('');
     const editorRef = useRef();
@@ -56,7 +57,7 @@ export const CodeMirrorEditor = () => {
     // Create the editor
     useEffect(() => {
         if (!editorRef.current) return;
-        
+
         // Editor config
         const startState = EditorState.create({
             doc: '',
@@ -86,7 +87,12 @@ export const CodeMirrorEditor = () => {
         // Check if there is any code saved in localStorage
         const savedCode = localStorage.getItem('code');
         console.log('saved code, ', savedCode);
-        if (savedCode) {
+        if (initialCode) {
+            view.dispatch({
+                changes: { from: 0, to: view.state.doc.length, insert: initialCode },
+            });
+        }
+        else if (savedCode) {
             // Replace the current content with the saved code
             view.dispatch({
                 changes: { from: 0, to: view.state.doc.length, insert: savedCode },
@@ -98,7 +104,7 @@ export const CodeMirrorEditor = () => {
         return () => {
             view.destroy();
         };
-    }, []);
+    }, [initialCode]);
 
     return (
         <div>

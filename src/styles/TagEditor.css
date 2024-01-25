@@ -1,0 +1,14 @@
+#tag-editor-container {
+    border: solid black 1px;
+    border-radius: 7px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.tag-item {
+    display: inline-block;
+    border: solid black 1px;
+    border-radius: 7px;
+    padding: 5px;
+    margin: 5px;
+}
